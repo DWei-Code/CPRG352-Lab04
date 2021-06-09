@@ -13,13 +13,13 @@
     </head>
     <body>
         <h1>Simple Note Keeper</h1>
-        <form method="post">
+        <form method="post" action="submit">
         <h2>View Note</h2>
         
         <p><b>Title:</b> ${note.title}</p>
         <p><b>Contents:</b> <br> ${note.contents}</p>
         
-        <a href="note?edit">Edit</a>
+        <a href="note?edit=true" type="submit">Edit</a>
         </form>
     </body>
 </html>

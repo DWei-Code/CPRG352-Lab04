@@ -34,15 +34,27 @@ public class NoteServlet extends HttpServlet {
         }catch(IOException e){
             System.err.println("File cannot be read");
         }
+         String edit = request.getParameter("edit");
+        
+        if(edit.equals("true")){
+        getServletContext().getRequestDispatcher("/WEB-INF/editnote.jsp").forward(request,response);
+        return;
+        }
         
         //this will display the view note JSP as a view
         getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request, response);
+        
+        
     }
 
     
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String title = request.getParameter("title");
+        String contents = request.getParameter("contents");
+        
+        String path = getServletContext().getRealPath("/WEB-INF/note.txt");
         
     }
 
