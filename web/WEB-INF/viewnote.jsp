@@ -19,7 +19,7 @@
         <p><b>Title:</b> ${note.title}</p>
         <p><b>Contents:</b> <br> ${note.contents}</p>
         
-        <a href="note?edit=true" type="submit">Edit</a>
+        <a href="note?edit" >Edit</a>
         </form>
     </body>
 </html>

@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Simple Note Keeper</h1>
-        <form method="post" action="submit">
+        <form method="post" >
         <h2>Edit Note</h2>
         
         <label>Title:</label>
